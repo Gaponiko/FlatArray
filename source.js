@@ -19,9 +19,7 @@ function flat(arr) {
     {
         var newArr = pushing(arr, []);
 
-        arr.forEach(function () {
-            arr.pop();
-        })
+        arr.splice(0, arr.length);
 
         newArr.forEach(function (element) {
             arr.push(element);
